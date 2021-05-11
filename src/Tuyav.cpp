@@ -92,6 +92,12 @@ void Tuyav::userValueInit()
   }
 }
 
+//send raw ID and value
+void Tuyav::SendUserIntValue(int ID, int value)
+{
+  mcu_dp_value_update(ID, value);
+}
+
 //Tuya Update Function
 void Tuyav::tuyaUpdate()
 {
@@ -174,6 +180,7 @@ void Tuyav::userValueUpdate()
   }
 }
 
+
 //Update each analog inputs
 void Tuyav::analogUpdate()
 {
@@ -191,6 +198,12 @@ void Tuyav::setUserValue(int TuyaPinID, String value)
 {
   uint8_t index = TuyaPinID - AV1;
   _userValues[index].setValue(value);
+}
+
+void Tuyav::sendUserValue(int TuyaPinID, int newValue)
+{
+  uint8_t index = TuyaPinID - AV1;
+  _userValues[index].setValue(newValue);
 }
 
 void Tuyav::setUpdateRateMs(unsigned long updateRate)
