@@ -38,6 +38,7 @@ class Tuyav
 
     void sendUserValue(int TuyaPinID, int newValue);
     void setUserValue(int TuyaPinID, String value);
+    void setUserValue(int TuyaPinID, String value);
     void initialize();
     void tuyaUpdate();
     

@@ -200,12 +200,6 @@ void Tuyav::setUserValue(int TuyaPinID, String value)
   _userValues[index].setValue(value);
 }
 
-void Tuyav::sendUserValue(int TuyaPinID, int newValue)
-{
-  uint8_t index = TuyaPinID - AV1;
-  _userValues[index].setValue(newValue);
-}
-
 void Tuyav::setUpdateRateMs(unsigned long updateRate)
 {
   if(updateRate < 2000)
