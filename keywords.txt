@@ -23,7 +23,6 @@ setAnalogOutputs	KEYWORD2
 getDigitalOutput	KEYWORD2
 getAnalogOutput		KEYWORD2
 get_tuyaSerial		KEYWORD2
-sendUserValue		KEYWORD2
 setUserValue	KEYWORD2
 setWifiMode		KEYWORD2
 resetWifi	KEYWORD2
