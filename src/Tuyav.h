@@ -36,8 +36,7 @@ class Tuyav
     AnalogOutput getAnalogOutput(int id);
     TuyaSerial get_tuyaSerial();
 
-    void sendUserValue(int TuyaPinID, int newValue);
-    void setUserValue(int TuyaPinID, String value);
+    void SendUserIntValue(int TuyaPinID, int newValue);
     void setUserValue(int TuyaPinID, String value);
     void initialize();
     void tuyaUpdate();
@@ -73,7 +72,6 @@ class Tuyav
     void digitalUpdate();
     void analogUpdate();
     void userValueUpdate();
-    void SendUserIntValue(int ID, int value);
 
     unsigned long eventTime1 = 2000;
     unsigned long previousTime1 = 0;
